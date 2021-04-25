@@ -36,4 +36,9 @@ public class Bullet : MonoBehaviour
         //Move the bullet towards the angle it is rotated in
         rb.MovePosition(rb.position + ((Vector2) transform.right * GameHandler.Instance.bulletSpeed * Time.fixedDeltaTime * (flip ? -1 : 1)));
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+    }
 }

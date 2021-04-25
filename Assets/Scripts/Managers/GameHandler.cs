@@ -6,13 +6,14 @@ public class GameHandler : Singleton<GameHandler>
 {
     public float playerSpeed;
     public float bulletSpeed;
+    public float bulletDamage;
 
     public GameObject player;
 
     [SerializeField]
     #pragma warning disable IDE0044 // Add readonly modifier
     private GameObject bulletPrefab;
-#pragma warning restore IDE0044 // Add readonly modifier
+    #pragma warning restore IDE0044 // Add readonly modifier
 
     private bool bulletCooldown;
 
